@@ -15,8 +15,8 @@ import io
 from PIL import Image
 
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = 'uploads'
-app.config['MAX_CONTENT_LENGTH'] = 4 * 1024 * 1024  # 4 MB max image size
+app.config['UPLOAD_FOLDER'] = 'upload'
+app.config['MAX_CONTENT_LENGTH'] = 1 * 1024 * 1024  # 4 MB max image size
 
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
@@ -246,6 +246,7 @@ def upload_file():
             df.to_csv("attendance_report.csv", index=False)
             
             # ------------ New code for message if he is  absent 
+            """
             import pywhatkit
             import time
 
@@ -277,7 +278,7 @@ def upload_file():
                             print(f"[ERROR] Could not send WhatsApp message to {student}: {e}")
                     else:
                         print(f"[NO CONTACT] Phone number not found for: {student}")
-                        
+             """           
             return jsonify({
                 'success': True,
                 'attendance': attendance,

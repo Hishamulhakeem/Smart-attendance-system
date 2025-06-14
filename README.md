@@ -62,13 +62,15 @@ The system has been tested on the following students for demo purposes:
 
 
 ### 🖼️ Input Image:
-![Input](classroom_test2.jpg)
+![classroom_test2](https://github.com/user-attachments/assets/d3a24b48-273b-4944-938d-d78250472c40)
+
 
 ### 🧾 Output Image:
-![Output](redme.jpg)
+![redme](https://github.com/user-attachments/assets/aa342a37-157c-4e2c-9d85-87d1778758dc)
 
 ### 🌐 Web Interface Preview:
-![UI](71e8cbf9-bd62-41b6-a336-34518c1c33aa.png)
+![image](https://github.com/user-attachments/assets/7664eb00-6325-410b-96fc-54f0129f7d0b)
+
 
 ---
 

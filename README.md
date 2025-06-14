@@ -1,6 +1,6 @@
 # 🎓 Smart Attendance System Using Face Recognition
 
-This project automates the process of student attendance using classroom images captured from CCTV or any high-resolution camera. The system detects and recognizes faces using deep learning and marks attendance in both CSV and JSON formats. If a student is absent, the system can optionally send a WhatsApp message to their parent.
+This is a smart and efficient system to automatically mark student attendance by analyzing a classroom photo — typically captured from a CCTV camera or even a decent smartphone camera. The system identifies student faces, matches them with the dataset, and marks them as present or absent. It also generates detailed reports and can notify parents via WhatsApp if their child is absent.
 
 ---
 
@@ -9,8 +9,8 @@ This project automates the process of student attendance using classroom images 
 - 🔎 **Face Recognition**: Powered by MobileNetV2 with 128D embedding generation.
 - 🧠 **Face Detection**: Based on OpenCV’s SSD + ResNet model.
 - 💾 **Attendance Reports**: Automatically saved as `.csv` and `.json` files.
-- 📩 **Parent Notification**: WhatsApp messages sent to parents of absentees.
-- 🖼️ **Visual Feedback**: Bounding boxes and names with matching score drawn on detected faces.
+- 📩 **Parent Notification**: Sends WhatsApp alerts to parents of absent students.
+- 🖼️ **Visual Feedback**: Highlights each recognized face with name and confidence score in BBox.
 - 💻 **Interactive Web Interface**: Upload images and view results instantly.
 
 ---
@@ -29,7 +29,7 @@ This project automates the process of student attendance using classroom images 
 
 ## 🗂️ Dataset Info
 
-- Each student has ~15 original images.
+- Each student has ~10-15 original images.
 - With augmentation, each has **40–50 images total**.
 - All images are organized in folders named after each student.
 
@@ -37,29 +37,16 @@ This project automates the process of student attendance using classroom images 
 
 ## 🧪 How It Works
 
-1. 📤 Upload a classroom image.
-2. 🧠 Faces are detected and embedded using a trained deep learning model.
-3. 🧾 Attendance is computed by matching faces to the known dataset.
-4. 📸 A result image is generated and saved.
-5. 📝 Reports are saved as `attendance_report.csv` and `attendance_report.json`.
-6. 📲 WhatsApp notifications are sent to parents of absentees (optional).
+1. Upload a photo of the classroom.
+2. The system detects faces and extracts embeddings.
+3. It compares them with known student embeddings.
+4. Students are marked **Present** or **Absent**.
+5. Generates reports (`.csv`, `.json`) and an annotated image.
+6. Optionally, it sends **WhatsApp messages** to parents of absentees.
 
 ---
 
-## 💻 Example Demo
-
-### 🖼️ Input Image:
-![Input](classroom_test2.jpg)
-
-### 🧾 Output Image:
-![Output](redme.jpg)
-
-### 🌐 Web Interface Preview:
-![UI](71e8cbf9-bd62-41b6-a336-34518c1c33aa.png)
-
----
-
-## 👨‍🎓 Example Students
+## 👨‍🎓 Example Students with Demo
 
 The system has been tested on the following students for demo purposes:
 
@@ -72,6 +59,16 @@ The system has been tested on the following students for demo purposes:
 - Tom Cruise  
 - Tom Holland  
 - Zendaya  
+
+
+### 🖼️ Input Image:
+![Input](classroom_test2.jpg)
+
+### 🧾 Output Image:
+![Output](redme.jpg)
+
+### 🌐 Web Interface Preview:
+![UI](71e8cbf9-bd62-41b6-a336-34518c1c33aa.png)
 
 ---
 

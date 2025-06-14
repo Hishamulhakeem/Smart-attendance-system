@@ -10,14 +10,14 @@ This project automates the process of student attendance using classroom images 
 - 🧠 **Face Detection**: Based on OpenCV’s SSD + ResNet model.
 - 💾 **Attendance Reports**: Automatically saved as `.csv` and `.json` files.
 - 📩 **Parent Notification**: WhatsApp messages sent to parents of absentees.
-- 🖼️ **Visual Feedback**: Bounding boxes and names drawn on detected faces.
+- 🖼️ **Visual Feedback**: Bounding boxes and names with matching score drawn on detected faces.
 - 💻 **Interactive Web Interface**: Upload images and view results instantly.
 
 ---
 
 ## 📥 Image Requirements
 
-- 📸 **Resolution**: Minimum 720p  
+- 📸 **Resolution**: Minimum 480p if good lighting available or else 720p must  
 - 🔄 **Max File Size**: Must be **under 4 MB**  
 - 👥 **Student Capacity**: Up to **35–40 students** per image  
 - 🔦 **Lighting**: Good lighting improves recognition accuracy  
